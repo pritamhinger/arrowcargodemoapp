@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AuthenticationViewController: UIViewController,GIDSignInUIDelegate {
+class AuthenticationViewController: UIViewController,GIDSignInUIDelegate, GIDSignInDelegate {
 
     var userType:String?
     
@@ -21,6 +21,33 @@ class AuthenticationViewController: UIViewController,GIDSignInUIDelegate {
         GIDSignIn.sharedInstance().uiDelegate = self
         signInButton.colorScheme = GIDSignInButtonColorScheme.Light
         signInButton.style = .Wide
+        GIDSignIn.sharedInstance().delegate = self
+    }
+    
+    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
+                withError error: NSError!) {
+        if (error == nil) {
+            let userId = user.userID
+            let idToken = user.authentication.idToken
+            let fullName = user.profile.name
+            let givenName = user.profile.givenName
+            let familyName = user.profile.familyName
+            let email = user.profile.email
+            print("UserId : \(userId)")
+            print("ID Token : \(idToken)")
+            print("Full Name : \(fullName)")
+            print("Family Name : \(familyName)")
+            print("Given Name : \(givenName)")
+            print("Email : \(email)")
+            performSegueWithIdentifier("appSegue", sender: self)
+        } else {
+            print("\(error.localizedDescription)")
+        }
+    }
+    
+    func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!,
+                withError error: NSError!) {
+        print("Signing Out");
     }
     
     /*
