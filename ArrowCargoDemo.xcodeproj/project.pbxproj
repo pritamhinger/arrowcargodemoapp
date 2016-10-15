@@ -16,6 +16,9 @@
 		4834392A1DB1F3E7009FDBE9 /* ArrowCargoDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483439291DB1F3E7009FDBE9 /* ArrowCargoDemoUITests.swift */; };
 		483439381DB218E1009FDBE9 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483439371DB218E1009FDBE9 /* AuthenticationViewController.swift */; };
 		4834393A1DB27698009FDBE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 483439391DB27698009FDBE9 /* GoogleService-Info.plist */; };
+		4834393F1DB2948A009FDBE9 /* AppTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834393E1DB2948A009FDBE9 /* AppTabbarViewController.swift */; };
+		483439411DB29C17009FDBE9 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483439401DB29C17009FDBE9 /* TrackingViewController.swift */; };
+		483439431DB29C26009FDBE9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483439421DB29C26009FDBE9 /* ProfileViewController.swift */; };
 		525909F8AA4A426954E263C1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AD4BC38F0377815960F19C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +57,9 @@
 		483439371DB218E1009FDBE9 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		483439391DB27698009FDBE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4834393B1DB277D3009FDBE9 /* ArrowCargoDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArrowCargoDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		4834393E1DB2948A009FDBE9 /* AppTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTabbarViewController.swift; sourceTree = "<group>"; };
+		483439401DB29C17009FDBE9 /* TrackingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
+		483439421DB29C26009FDBE9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BB7A311715FE3E3E726625CB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D3AD4BC38F0377815960F19C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,6 +124,9 @@
 				483439121DB1F3E7009FDBE9 /* LaunchScreen.storyboard */,
 				483439151DB1F3E7009FDBE9 /* Info.plist */,
 				483439371DB218E1009FDBE9 /* AuthenticationViewController.swift */,
+				4834393E1DB2948A009FDBE9 /* AppTabbarViewController.swift */,
+				483439401DB29C17009FDBE9 /* TrackingViewController.swift */,
+				483439421DB29C26009FDBE9 /* ProfileViewController.swift */,
 			);
 			path = ArrowCargoDemo;
 			sourceTree = "<group>";
@@ -340,6 +349,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				483439431DB29C26009FDBE9 /* ProfileViewController.swift in Sources */,
+				483439411DB29C17009FDBE9 /* TrackingViewController.swift in Sources */,
+				4834393F1DB2948A009FDBE9 /* AppTabbarViewController.swift in Sources */,
 				4834390C1DB1F3E7009FDBE9 /* LoginViewController.swift in Sources */,
 				483439381DB218E1009FDBE9 /* AuthenticationViewController.swift in Sources */,
 				4834390A1DB1F3E7009FDBE9 /* AppDelegate.swift in Sources */,

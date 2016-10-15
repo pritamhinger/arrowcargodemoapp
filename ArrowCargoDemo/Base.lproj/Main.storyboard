@@ -288,17 +288,16 @@
                     <navigationItem key="navigationItem" id="tiW-He-fYd"/>
                     <connections>
                         <outlet property="signInButton" destination="1AY-XX-YFP" id="YCl-jl-N4a"/>
-                        <segue destination="tz8-Mx-1Qr" kind="show" identifier="appSegue" id="VY3-e4-AMC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GAY-fp-TKJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1777" y="305"/>
         </scene>
-        <!--View Controller-->
+        <!--Tracking View Controller-->
         <scene sceneID="3xT-AT-yS3">
             <objects>
-                <viewController id="nWM-Tn-Lt0" sceneMemberID="viewController">
+                <viewController id="nWM-Tn-Lt0" customClass="TrackingViewController" customModule="ArrowCargoDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uB7-Tw-quN"/>
                         <viewControllerLayoutGuide type="bottom" id="5mx-3T-9Cc"/>
@@ -314,10 +313,10 @@
             </objects>
             <point key="canvasLocation" x="4135" y="118"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="keh-3h-8OH">
             <objects>
-                <viewController id="YVE-qh-MuL" sceneMemberID="viewController">
+                <viewController id="YVE-qh-MuL" customClass="ProfileViewController" customModule="ArrowCargoDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6rA-LU-Do5"/>
                         <viewControllerLayoutGuide type="bottom" id="uTU-Ab-8Bd"/>
@@ -325,9 +324,56 @@
                     <view key="view" contentMode="scaleToFill" id="gLz-nu-HtQ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AeD-Im-QOz">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="idCellCustom" id="c7t-he-H6I">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c7t-he-H6I" id="iI0-2C-Jak">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="idBasicCell" textLabel="w3P-fu-DXd" style="IBUITableViewCellStyleDefault" id="gjT-yV-um3">
+                                        <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gjT-yV-um3" id="Q46-qs-aXy">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="w3P-fu-DXd">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="YVE-qh-MuL" id="Fmf-Td-3Xb"/>
+                                    <outlet property="delegate" destination="YVE-qh-MuL" id="xME-CW-Sd9"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AeD-Im-QOz" firstAttribute="top" secondItem="6rA-LU-Do5" secondAttribute="bottom" constant="-64" id="NbJ-tN-3Dl"/>
+                            <constraint firstItem="AeD-Im-QOz" firstAttribute="leading" secondItem="gLz-nu-HtQ" secondAttribute="leadingMargin" constant="-20" id="Tsi-Ou-iRO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AeD-Im-QOz" secondAttribute="trailing" constant="-20" id="pqg-EN-EDj"/>
+                            <constraint firstItem="uTU-Ab-8Bd" firstAttribute="top" secondItem="AeD-Im-QOz" secondAttribute="bottom" id="yY2-Uy-eWR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UlC-0I-bXG"/>
+                    <connections>
+                        <outlet property="tableView" destination="AeD-Im-QOz" id="HNe-v4-bUC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zzr-Xy-Auv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -370,10 +416,10 @@
             </objects>
             <point key="canvasLocation" x="3411" y="118"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--App Tabbar View Controller-->
         <scene sceneID="Quo-De-HFl">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tz8-Mx-1Qr" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="AppEntryPointStoryboardId" automaticallyAdjustsScrollViewInsets="NO" id="tz8-Mx-1Qr" customClass="AppTabbarViewController" customModule="ArrowCargoDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="eXz-8a-5FP">
                         <autoresizingMask key="autoresizingMask"/>

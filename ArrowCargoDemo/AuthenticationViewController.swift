@@ -9,7 +9,7 @@
 import UIKit
 
 class AuthenticationViewController: UIViewController,GIDSignInUIDelegate, GIDSignInDelegate {
-
+    
     var userType:String?
     
     @IBOutlet weak var signInButton: GIDSignInButton!
@@ -24,8 +24,7 @@ class AuthenticationViewController: UIViewController,GIDSignInUIDelegate, GIDSig
         GIDSignIn.sharedInstance().delegate = self
     }
     
-    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
-                withError error: NSError!) {
+    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!, withError error: NSError!) {
         if (error == nil) {
             let userId = user.userID
             let idToken = user.authentication.idToken
@@ -39,25 +38,25 @@ class AuthenticationViewController: UIViewController,GIDSignInUIDelegate, GIDSig
             print("Family Name : \(familyName)")
             print("Given Name : \(givenName)")
             print("Email : \(email)")
-            performSegueWithIdentifier("appSegue", sender: self)
+            let tabVC = storyboard?.instantiateViewControllerWithIdentifier("AppEntryPointStoryboardId") as! UITabBarController
+            self.navigationController?.pushViewController(tabVC, animated: true)
         } else {
             print("\(error.localizedDescription)")
         }
     }
     
-    func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!,
-                withError error: NSError!) {
+    func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!, withError error: NSError!) {
         print("Signing Out");
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
