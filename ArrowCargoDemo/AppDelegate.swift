@@ -15,7 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        let attr = NSDictionary(object: UIFont(name: "AvenirNext-Regular", size: 14.0)!, forKey: NSFontAttributeName)
+        UISegmentedControl.appearance().setTitleTextAttributes(attr as [NSObject : AnyObject] , forState: .Normal)
+        UINavigationBar.appearance().barTintColor = UIColor(red: 19/255.0, green: 33/255.0, blue: 64/255.0, alpha: 1.0)
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        if let barFont = UIFont(name: "AvenirNext-Regular", size: 15.0) {
+            UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor(), NSFontAttributeName:barFont]
+        }
         return true
     }
 
