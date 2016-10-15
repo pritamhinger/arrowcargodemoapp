@@ -8,14 +8,19 @@
 
 import UIKit
 
-class AuthenticationViewController: UIViewController {
+class AuthenticationViewController: UIViewController,GIDSignInUIDelegate {
 
     var userType:String?
+    
+    @IBOutlet weak var signInButton: GIDSignInButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.topItem?.title = ""
         navigationItem.title = "\(userType!) Login"
+        GIDSignIn.sharedInstance().uiDelegate = self
+        signInButton.colorScheme = GIDSignInButtonColorScheme.Light
+        signInButton.style = .Wide
     }
     
     /*

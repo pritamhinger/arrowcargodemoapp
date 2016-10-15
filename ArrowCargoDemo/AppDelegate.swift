@@ -9,7 +9,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     var window: UIWindow?
 
@@ -22,6 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let barFont = UIFont(name: "AvenirNext-Regular", size: 15.0) {
             UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor(), NSFontAttributeName:barFont]
         }
+        
+        var configureError: NSError?
+        GGLContext.sharedInstance().configureWithError(&configureError)
+        assert(configureError == nil, "Error configuring Google services: \(configureError)")
+        
+        GIDSignIn.sharedInstance().delegate = self
+        
         return true
     }
 
@@ -47,6 +54,45 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(application: UIApplication,
+                     openURL url: NSURL, options: [String: AnyObject]) -> Bool {
+        return GIDSignIn.sharedInstance().handleURL(url,
+                                                    sourceApplication: options[UIApplicationOpenURLOptionsSourceApplicationKey] as? String,
+                                                    annotation: options[UIApplicationOpenURLOptionsAnnotationKey])
+    }
+    /*
+    func application(application: UIApplication,
+                     openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+//        var options: [String: AnyObject] = [UIApplicationOpenURLOptionsSourceApplicationKey: sourceApplication!,
+//                                            UIApplicationOpenURLOptionsAnnotationKey: annotation!]
+        return GIDSignIn.sharedInstance().handleURL(url,
+                                                    sourceApplication: sourceApplication,
+                                                    annotation: annotation)
+    }
+    */
+    
+    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
+                withError error: NSError!) {
+        if (error == nil) {
+            let userId = user.userID
+            let idToken = user.authentication.idToken
+            let fullName = user.profile.name
+            let givenName = user.profile.givenName
+            let familyName = user.profile.familyName
+            let email = user.profile.email
+            print("UserId : \(userId)")
+            print("ID Token : \(idToken)")
+            print(" : \(fullName)")
+            print(" : \(familyName)")
+            print(" : \(givenName)")
+            print(" : \(email)")
+        } else {
+            print("\(error.localizedDescription)")
+        }
+    }
+    
+    func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!,
+                withError error: NSError!) {
+    }
 }
 

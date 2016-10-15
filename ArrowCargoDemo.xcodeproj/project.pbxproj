@@ -15,6 +15,8 @@
 		4834391F1DB1F3E7009FDBE9 /* ArrowCargoDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834391E1DB1F3E7009FDBE9 /* ArrowCargoDemoTests.swift */; };
 		4834392A1DB1F3E7009FDBE9 /* ArrowCargoDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483439291DB1F3E7009FDBE9 /* ArrowCargoDemoUITests.swift */; };
 		483439381DB218E1009FDBE9 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483439371DB218E1009FDBE9 /* AuthenticationViewController.swift */; };
+		4834393A1DB27698009FDBE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 483439391DB27698009FDBE9 /* GoogleService-Info.plist */; };
+		525909F8AA4A426954E263C1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AD4BC38F0377815960F19C /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2307A8F22606369B5A526601 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		483439061DB1F3E7009FDBE9 /* ArrowCargoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArrowCargoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		483439091DB1F3E7009FDBE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4834390B1DB1F3E7009FDBE9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,10 @@
 		483439291DB1F3E7009FDBE9 /* ArrowCargoDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowCargoDemoUITests.swift; sourceTree = "<group>"; };
 		4834392B1DB1F3E7009FDBE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		483439371DB218E1009FDBE9 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		483439391DB27698009FDBE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4834393B1DB277D3009FDBE9 /* ArrowCargoDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArrowCargoDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB7A311715FE3E3E726625CB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D3AD4BC38F0377815960F19C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525909F8AA4A426954E263C1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +87,14 @@
 		483438FD1DB1F3E7009FDBE9 = {
 			isa = PBXGroup;
 			children = (
+				483439391DB27698009FDBE9 /* GoogleService-Info.plist */,
 				483439081DB1F3E7009FDBE9 /* ArrowCargoDemo */,
 				4834391D1DB1F3E7009FDBE9 /* ArrowCargoDemoTests */,
 				483439281DB1F3E7009FDBE9 /* ArrowCargoDemoUITests */,
 				483439071DB1F3E7009FDBE9 /* Products */,
+				C263E273285B257EEEF90A26 /* Pods */,
+				5FDC9D61611419A42F25DB65 /* Frameworks */,
+				4834393B1DB277D3009FDBE9 /* ArrowCargoDemo-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +140,23 @@
 			path = ArrowCargoDemoUITests;
 			sourceTree = "<group>";
 		};
+		5FDC9D61611419A42F25DB65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3AD4BC38F0377815960F19C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C263E273285B257EEEF90A26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB7A311715FE3E3E726625CB /* Pods.debug.xcconfig */,
+				2307A8F22606369B5A526601 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4834392E1DB1F3E7009FDBE9 /* Build configuration list for PBXNativeTarget "ArrowCargoDemo" */;
 			buildPhases = (
+				46AF72B67E11B555A7B71886 /* Check Pods Manifest.lock */,
 				483439021DB1F3E7009FDBE9 /* Sources */,
 				483439031DB1F3E7009FDBE9 /* Frameworks */,
 				483439041DB1F3E7009FDBE9 /* Resources */,
+				4499030A5FCB09FCED3B8D09 /* Embed Pods Frameworks */,
+				EA5B2D4CCD240248411C64FB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				483439141DB1F3E7009FDBE9 /* LaunchScreen.storyboard in Resources */,
+				4834393A1DB27698009FDBE9 /* GoogleService-Info.plist in Resources */,
 				483439111DB1F3E7009FDBE9 /* Assets.xcassets in Resources */,
 				4834390F1DB1F3E7009FDBE9 /* Main.storyboard in Resources */,
 			);
@@ -253,6 +286,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4499030A5FCB09FCED3B8D09 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46AF72B67E11B555A7B71886 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA5B2D4CCD240248411C64FB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		483439021DB1F3E7009FDBE9 /* Sources */ = {
@@ -401,23 +482,30 @@
 		};
 		4834392F1DB1F3E7009FDBE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB7A311715FE3E3E726625CB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ArrowCargoDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appdevelapp.ArrowCargoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ArrowCargoDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		483439301DB1F3E7009FDBE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2307A8F22606369B5A526601 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ArrowCargoDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appdevelapp.ArrowCargoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ArrowCargoDemo-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -486,6 +574,7 @@
 				483439301DB1F3E7009FDBE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		483439311DB1F3E7009FDBE9 /* Build configuration list for PBXNativeTarget "ArrowCargoDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +583,7 @@
 				483439331DB1F3E7009FDBE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		483439341DB1F3E7009FDBE9 /* Build configuration list for PBXNativeTarget "ArrowCargoDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +592,7 @@
 				483439361DB1F3E7009FDBE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
