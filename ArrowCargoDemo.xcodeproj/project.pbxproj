@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4834390A1DB1F3E7009FDBE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483439091DB1F3E7009FDBE9 /* AppDelegate.swift */; };
+		4834390C1DB1F3E7009FDBE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834390B1DB1F3E7009FDBE9 /* ViewController.swift */; };
+		4834390F1DB1F3E7009FDBE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4834390D1DB1F3E7009FDBE9 /* Main.storyboard */; };
+		483439111DB1F3E7009FDBE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 483439101DB1F3E7009FDBE9 /* Assets.xcassets */; };
+		483439141DB1F3E7009FDBE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 483439121DB1F3E7009FDBE9 /* LaunchScreen.storyboard */; };
+		4834391F1DB1F3E7009FDBE9 /* ArrowCargoDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4834391E1DB1F3E7009FDBE9 /* ArrowCargoDemoTests.swift */; };
+		4834392A1DB1F3E7009FDBE9 /* ArrowCargoDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483439291DB1F3E7009FDBE9 /* ArrowCargoDemoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4834391B1DB1F3E7009FDBE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 483438FE1DB1F3E7009FDBE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 483439051DB1F3E7009FDBE9;
+			remoteInfo = ArrowCargoDemo;
+		};
+		483439261DB1F3E7009FDBE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 483438FE1DB1F3E7009FDBE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 483439051DB1F3E7009FDBE9;
+			remoteInfo = ArrowCargoDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		483439061DB1F3E7009FDBE9 /* ArrowCargoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArrowCargoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		483439091DB1F3E7009FDBE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4834390B1DB1F3E7009FDBE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4834390E1DB1F3E7009FDBE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		483439101DB1F3E7009FDBE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		483439131DB1F3E7009FDBE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		483439151DB1F3E7009FDBE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4834391A1DB1F3E7009FDBE9 /* ArrowCargoDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArrowCargoDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4834391E1DB1F3E7009FDBE9 /* ArrowCargoDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowCargoDemoTests.swift; sourceTree = "<group>"; };
+		483439201DB1F3E7009FDBE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		483439251DB1F3E7009FDBE9 /* ArrowCargoDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArrowCargoDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		483439291DB1F3E7009FDBE9 /* ArrowCargoDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowCargoDemoUITests.swift; sourceTree = "<group>"; };
+		4834392B1DB1F3E7009FDBE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		483439031DB1F3E7009FDBE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		483439171DB1F3E7009FDBE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		483439221DB1F3E7009FDBE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		483438FD1DB1F3E7009FDBE9 = {
+			isa = PBXGroup;
+			children = (
+				483439081DB1F3E7009FDBE9 /* ArrowCargoDemo */,
+				4834391D1DB1F3E7009FDBE9 /* ArrowCargoDemoTests */,
+				483439281DB1F3E7009FDBE9 /* ArrowCargoDemoUITests */,
+				483439071DB1F3E7009FDBE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		483439071DB1F3E7009FDBE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				483439061DB1F3E7009FDBE9 /* ArrowCargoDemo.app */,
+				4834391A1DB1F3E7009FDBE9 /* ArrowCargoDemoTests.xctest */,
+				483439251DB1F3E7009FDBE9 /* ArrowCargoDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		483439081DB1F3E7009FDBE9 /* ArrowCargoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				483439091DB1F3E7009FDBE9 /* AppDelegate.swift */,
+				4834390B1DB1F3E7009FDBE9 /* ViewController.swift */,
+				4834390D1DB1F3E7009FDBE9 /* Main.storyboard */,
+				483439101DB1F3E7009FDBE9 /* Assets.xcassets */,
+				483439121DB1F3E7009FDBE9 /* LaunchScreen.storyboard */,
+				483439151DB1F3E7009FDBE9 /* Info.plist */,
+			);
+			path = ArrowCargoDemo;
+			sourceTree = "<group>";
+		};
+		4834391D1DB1F3E7009FDBE9 /* ArrowCargoDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4834391E1DB1F3E7009FDBE9 /* ArrowCargoDemoTests.swift */,
+				483439201DB1F3E7009FDBE9 /* Info.plist */,
+			);
+			path = ArrowCargoDemoTests;
+			sourceTree = "<group>";
+		};
+		483439281DB1F3E7009FDBE9 /* ArrowCargoDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				483439291DB1F3E7009FDBE9 /* ArrowCargoDemoUITests.swift */,
+				4834392B1DB1F3E7009FDBE9 /* Info.plist */,
+			);
+			path = ArrowCargoDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		483439051DB1F3E7009FDBE9 /* ArrowCargoDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4834392E1DB1F3E7009FDBE9 /* Build configuration list for PBXNativeTarget "ArrowCargoDemo" */;
+			buildPhases = (
+				483439021DB1F3E7009FDBE9 /* Sources */,
+				483439031DB1F3E7009FDBE9 /* Frameworks */,
+				483439041DB1F3E7009FDBE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArrowCargoDemo;
+			productName = ArrowCargoDemo;
+			productReference = 483439061DB1F3E7009FDBE9 /* ArrowCargoDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		483439191DB1F3E7009FDBE9 /* ArrowCargoDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 483439311DB1F3E7009FDBE9 /* Build configuration list for PBXNativeTarget "ArrowCargoDemoTests" */;
+			buildPhases = (
+				483439161DB1F3E7009FDBE9 /* Sources */,
+				483439171DB1F3E7009FDBE9 /* Frameworks */,
+				483439181DB1F3E7009FDBE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4834391C1DB1F3E7009FDBE9 /* PBXTargetDependency */,
+			);
+			name = ArrowCargoDemoTests;
+			productName = ArrowCargoDemoTests;
+			productReference = 4834391A1DB1F3E7009FDBE9 /* ArrowCargoDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		483439241DB1F3E7009FDBE9 /* ArrowCargoDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 483439341DB1F3E7009FDBE9 /* Build configuration list for PBXNativeTarget "ArrowCargoDemoUITests" */;
+			buildPhases = (
+				483439211DB1F3E7009FDBE9 /* Sources */,
+				483439221DB1F3E7009FDBE9 /* Frameworks */,
+				483439231DB1F3E7009FDBE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				483439271DB1F3E7009FDBE9 /* PBXTargetDependency */,
+			);
+			name = ArrowCargoDemoUITests;
+			productName = ArrowCargoDemoUITests;
+			productReference = 483439251DB1F3E7009FDBE9 /* ArrowCargoDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		483438FE1DB1F3E7009FDBE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = AppDevelapp;
+				TargetAttributes = {
+					483439051DB1F3E7009FDBE9 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					483439191DB1F3E7009FDBE9 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 483439051DB1F3E7009FDBE9;
+					};
+					483439241DB1F3E7009FDBE9 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 483439051DB1F3E7009FDBE9;
+					};
+				};
+			};
+			buildConfigurationList = 483439011DB1F3E7009FDBE9 /* Build configuration list for PBXProject "ArrowCargoDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 483438FD1DB1F3E7009FDBE9;
+			productRefGroup = 483439071DB1F3E7009FDBE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				483439051DB1F3E7009FDBE9 /* ArrowCargoDemo */,
+				483439191DB1F3E7009FDBE9 /* ArrowCargoDemoTests */,
+				483439241DB1F3E7009FDBE9 /* ArrowCargoDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		483439041DB1F3E7009FDBE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				483439141DB1F3E7009FDBE9 /* LaunchScreen.storyboard in Resources */,
+				483439111DB1F3E7009FDBE9 /* Assets.xcassets in Resources */,
+				4834390F1DB1F3E7009FDBE9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		483439181DB1F3E7009FDBE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		483439231DB1F3E7009FDBE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		483439021DB1F3E7009FDBE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4834390C1DB1F3E7009FDBE9 /* ViewController.swift in Sources */,
+				4834390A1DB1F3E7009FDBE9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		483439161DB1F3E7009FDBE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4834391F1DB1F3E7009FDBE9 /* ArrowCargoDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		483439211DB1F3E7009FDBE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4834392A1DB1F3E7009FDBE9 /* ArrowCargoDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4834391C1DB1F3E7009FDBE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 483439051DB1F3E7009FDBE9 /* ArrowCargoDemo */;
+			targetProxy = 4834391B1DB1F3E7009FDBE9 /* PBXContainerItemProxy */;
+		};
+		483439271DB1F3E7009FDBE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 483439051DB1F3E7009FDBE9 /* ArrowCargoDemo */;
+			targetProxy = 483439261DB1F3E7009FDBE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4834390D1DB1F3E7009FDBE9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4834390E1DB1F3E7009FDBE9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		483439121DB1F3E7009FDBE9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				483439131DB1F3E7009FDBE9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4834392C1DB1F3E7009FDBE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4834392D1DB1F3E7009FDBE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4834392F1DB1F3E7009FDBE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ArrowCargoDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appdevelapp.ArrowCargoDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		483439301DB1F3E7009FDBE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ArrowCargoDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appdevelapp.ArrowCargoDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		483439321DB1F3E7009FDBE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ArrowCargoDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appdevelapp.ArrowCargoDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArrowCargoDemo.app/ArrowCargoDemo";
+			};
+			name = Debug;
+		};
+		483439331DB1F3E7009FDBE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ArrowCargoDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appdevelapp.ArrowCargoDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArrowCargoDemo.app/ArrowCargoDemo";
+			};
+			name = Release;
+		};
+		483439351DB1F3E7009FDBE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ArrowCargoDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appdevelapp.ArrowCargoDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ArrowCargoDemo;
+			};
+			name = Debug;
+		};
+		483439361DB1F3E7009FDBE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ArrowCargoDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appdevelapp.ArrowCargoDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ArrowCargoDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		483439011DB1F3E7009FDBE9 /* Build configuration list for PBXProject "ArrowCargoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4834392C1DB1F3E7009FDBE9 /* Debug */,
+				4834392D1DB1F3E7009FDBE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4834392E1DB1F3E7009FDBE9 /* Build configuration list for PBXNativeTarget "ArrowCargoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4834392F1DB1F3E7009FDBE9 /* Debug */,
+				483439301DB1F3E7009FDBE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		483439311DB1F3E7009FDBE9 /* Build configuration list for PBXNativeTarget "ArrowCargoDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				483439321DB1F3E7009FDBE9 /* Debug */,
+				483439331DB1F3E7009FDBE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		483439341DB1F3E7009FDBE9 /* Build configuration list for PBXNativeTarget "ArrowCargoDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				483439351DB1F3E7009FDBE9 /* Debug */,
+				483439361DB1F3E7009FDBE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 483438FE1DB1F3E7009FDBE9 /* Project object */;
+}
