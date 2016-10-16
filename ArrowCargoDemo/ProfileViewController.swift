@@ -11,9 +11,16 @@ import UIKit
 class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
+    var userProfile:UserProfile?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        if let userProfileData = userDefaults.valueForKey("UserProfile") as? NSData{
+            userProfile = NSKeyedUnarchiver.unarchiveObjectWithData(userProfileData) as? UserProfile;
+        }
     }
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 4
     }
@@ -48,8 +55,11 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         if indexPath.section == 0{
             let customCell = tableView.dequeueReusableCellWithIdentifier("idCellCustom", forIndexPath: indexPath) as! PublicProfileTableViewCell
-            customCell.userName.text = "Pritam Hinger"
-            customCell.emailAddress.text = "pritamgenius24@gmail.com"
+            if userProfile != nil && indexPath.row == 0{
+                customCell.userName.text = userProfile?.fullName
+                customCell.emailAddress.text = userProfile?.emailAddress
+            }
+            
             return customCell
         }
         else{
@@ -90,6 +100,15 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
             
             cell.textLabel?.text = cellTitle
             return cell
+        }
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.cellForRowAtIndexPath(indexPath)?.selected = false
+        if indexPath.section == 3 && indexPath.row == 0{
+            GIDSignIn.sharedInstance().signOut()
+            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.navigationReference?.popViewControllerAnimated(true)
         }
     }
     

@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var navigationReference:UINavigationController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         let attr = NSDictionary(object: UIFont(name: "AvenirNext-Regular", size: 14.0)!, forKey: NSFontAttributeName)

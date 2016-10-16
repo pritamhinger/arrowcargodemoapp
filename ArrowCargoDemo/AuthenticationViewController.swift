@@ -26,19 +26,13 @@ class AuthenticationViewController: UIViewController,GIDSignInUIDelegate, GIDSig
     
     func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!, withError error: NSError!) {
         if (error == nil) {
-            let userId = user.userID
-            let idToken = user.authentication.idToken
-            let fullName = user.profile.name
-            let givenName = user.profile.givenName
-            let familyName = user.profile.familyName
-            let email = user.profile.email
-            print("UserId : \(userId)")
-            print("ID Token : \(idToken)")
-            print("Full Name : \(fullName)")
-            print("Family Name : \(familyName)")
-            print("Given Name : \(givenName)")
-            print("Email : \(email)")
+            let userProfile = UserProfile(user: user)
+            let userDefaults = NSUserDefaults.standardUserDefaults()
+            userDefaults.setObject(NSKeyedArchiver.archivedDataWithRootObject(userProfile), forKey: "UserProfile")
+            
             let tabVC = storyboard?.instantiateViewControllerWithIdentifier("AppEntryPointStoryboardId") as! UITabBarController
+            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.navigationReference = self.navigationController
             self.navigationController?.pushViewController(tabVC, animated: true)
         } else {
             print("\(error.localizedDescription)")

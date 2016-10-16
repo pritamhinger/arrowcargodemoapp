@@ -10,12 +10,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ArrowCargoDemo/AuthenticationViewController.swift"
-            timestampString = "498242596.372843"
+            timestampString = "498294405.091332"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "signIn(_:didSignInForUser:withError:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ArrowCargoDemo/UserProfile.swift"
+            timestampString = "498294476.201538"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "init(coder:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ArrowCargoDemo/ProfileViewController.swift"
+            timestampString = "498295276.041682"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ArrowCargoDemo/AuthenticationViewController.swift"
+            timestampString = "498296346.921782"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "signIn(_:didDisconnectWithUser:withError:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
