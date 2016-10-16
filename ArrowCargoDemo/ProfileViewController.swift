@@ -34,10 +34,10 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return 3
+            return 1
         case 1:
-            return 2
-        case 3:
+            return 4
+        case 2:
             return 1
         default:
             return 1
@@ -45,8 +45,60 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("idBasicCell", forIndexPath: indexPath)
-        return cell
+        
+        if indexPath.section == 0{
+            let customCell = tableView.dequeueReusableCellWithIdentifier("idCellCustom", forIndexPath: indexPath) as! PublicProfileTableViewCell
+            customCell.userName.text = "Pritam Hinger"
+            customCell.emailAddress.text = "pritamgenius24@gmail.com"
+            return customCell
+        }
+        else{
+            let cell = tableView.dequeueReusableCellWithIdentifier("idBasicCell", forIndexPath: indexPath)
+            var cellTitle = "-- NA --"
+            switch indexPath.section {
+            case 1:
+                switch indexPath.row {
+                case 0:
+                    cellTitle = "Change Password"
+                case 1:
+                    cellTitle = "Create Passcode"
+                case 2:
+                    cellTitle = "Email Settings"
+                case 3:
+                    cellTitle = "Account Privacy"
+                default:
+                    break
+                }
+            case 2:
+                switch indexPath.row {
+                case 0:
+                    cellTitle = "Notification Settings"
+                default:
+                    break
+                }
+                
+            case 3:
+                switch indexPath.row {
+                case 0:
+                    cellTitle = "Logout"
+                default:
+                    break
+                }
+            default:
+                break
+            }
+            
+            cell.textLabel?.text = cellTitle
+            return cell
+        }
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if indexPath.section == 0{
+            return CGFloat(integerLiteral: 100)
+        }
+        
+        return CGFloat(integerLiteral: 44)
     }
     
     /*

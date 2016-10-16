@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -325,21 +326,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AeD-Im-QOz">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AeD-Im-QOz">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="idCellCustom" id="c7t-he-H6I">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="idCellCustom" rowHeight="100" id="c7t-he-H6I" customClass="PublicProfileTableViewCell" customModule="ArrowCargoDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c7t-he-H6I" id="iI0-2C-Jak">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="u8x-yT-gFQ">
+                                                    <rect key="frame" x="8" y="4" width="92" height="92"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="u8x-yT-gFQ" secondAttribute="height" multiplier="1:1" id="1Xf-QQ-Xkn"/>
+                                                        <constraint firstAttribute="height" constant="92" id="Peq-ma-wXK"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="SQW-hU-VFS">
+                                                    <rect key="frame" x="108" y="15" width="484" height="26"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LVZ-4I-ZPe">
+                                                    <rect key="frame" x="108" y="49" width="484" height="3"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="3" id="1CY-wb-WfL"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="7DV-sB-gSX">
+                                                    <rect key="frame" x="108" y="60" width="484" height="26"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="LVZ-4I-ZPe" firstAttribute="trailing" secondItem="SQW-hU-VFS" secondAttribute="trailing" id="2mO-jA-cbw"/>
+                                                <constraint firstItem="LVZ-4I-ZPe" firstAttribute="leading" secondItem="SQW-hU-VFS" secondAttribute="leading" id="GPi-5m-Ggd"/>
+                                                <constraint firstItem="SQW-hU-VFS" firstAttribute="top" secondItem="u8x-yT-gFQ" secondAttribute="top" constant="11" id="Hb2-rJ-IFU"/>
+                                                <constraint firstItem="LVZ-4I-ZPe" firstAttribute="top" secondItem="SQW-hU-VFS" secondAttribute="bottom" constant="8" id="K61-h2-crX"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="u8x-yT-gFQ" secondAttribute="leading" id="P2k-F0-lnS"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="SQW-hU-VFS" secondAttribute="trailing" id="R09-yn-sec"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="u8x-yT-gFQ" secondAttribute="bottom" constant="-4.5" id="WRN-3T-GPT"/>
+                                                <constraint firstItem="7DV-sB-gSX" firstAttribute="trailing" secondItem="LVZ-4I-ZPe" secondAttribute="trailing" id="Zgj-A2-F2d"/>
+                                                <constraint firstItem="SQW-hU-VFS" firstAttribute="leading" secondItem="u8x-yT-gFQ" secondAttribute="trailing" constant="8" id="aWa-GH-hDq"/>
+                                                <constraint firstItem="u8x-yT-gFQ" firstAttribute="top" secondItem="iI0-2C-Jak" secondAttribute="topMargin" constant="-4" id="d9B-AD-i5N"/>
+                                                <constraint firstItem="7DV-sB-gSX" firstAttribute="leading" secondItem="LVZ-4I-ZPe" secondAttribute="leading" id="o2Y-dS-SxV"/>
+                                                <constraint firstItem="7DV-sB-gSX" firstAttribute="bottom" secondItem="u8x-yT-gFQ" secondAttribute="bottom" constant="-10" id="rsE-N3-Plq"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="emailAddress" destination="7DV-sB-gSX" id="PT5-dd-dqh"/>
+                                            <outlet property="profileImage" destination="u8x-yT-gFQ" id="JYg-JL-xc9"/>
+                                            <outlet property="separator" destination="LVZ-4I-ZPe" id="75C-Ga-Yji"/>
+                                            <outlet property="userName" destination="SQW-hU-VFS" id="ycb-bw-qM3"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="idBasicCell" textLabel="w3P-fu-DXd" style="IBUITableViewCellStyleDefault" id="gjT-yV-um3">
-                                        <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="idBasicCell" textLabel="w3P-fu-DXd" rowHeight="44" style="IBUITableViewCellStyleDefault" id="gjT-yV-um3">
+                                        <rect key="frame" x="0.0" y="192" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gjT-yV-um3" id="Q46-qs-aXy">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
@@ -401,7 +450,7 @@
         <scene sceneID="Unt-Tf-Gal">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gjn-IC-BeG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Track" id="dRh-9N-0dJ"/>
+                    <tabBarItem key="tabBarItem" title="Track" image="locate" selectedImage="locateSelected" id="dRh-9N-0dJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="71Z-bT-LTD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -438,7 +487,7 @@
         <scene sceneID="SfS-Lh-jbJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fft-xh-4KW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="FPt-Yu-cxe"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" selectedImage="SelectedProfile" id="FPt-Yu-cxe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8SV-bR-AS5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -454,4 +503,11 @@
             <point key="canvasLocation" x="3411" y="790"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Profile" width="34" height="34"/>
+        <image name="SelectedProfile" width="34" height="34"/>
+        <image name="locate" width="34" height="34"/>
+        <image name="locateSelected" width="32" height="32"/>
+        <image name="profileImage" width="200" height="203"/>
+    </resources>
 </document>
