@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9143684C-011D-45A5-9DEC-2A309BDDE7BB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ArrowCargoDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>06D525017A4C8B2FD6D265CBC4218B33C41C49A5</key>
+		<string>bitbucket.org:pritamhinger/arrowcargodemoapp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ArrowCargoDemo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>06D525017A4C8B2FD6D265CBC4218B33C41C49A5</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>bitbucket.org:pritamhinger/arrowcargodemoapp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>06D525017A4C8B2FD6D265CBC4218B33C41C49A5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>06D525017A4C8B2FD6D265CBC4218B33C41C49A5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ArrowCargoDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
